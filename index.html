@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integraterapias | Patricia Núñez Díaz</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+                    colors: {
+                        lavanda: { light: '#F8F5FF', DEFAULT: '#E0D7F7', dark: '#C3B5F5' },
+                        morado: { DEFAULT: '#4B2E83', dark: '#2D1B4E', light: '#7C5DBC' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-lavanda-light text-slate-800 font-sans">
+
+<nav id="main-nav" class="fixed w-full top-0 z-50 px-6 py-4 transition-all duration-500">
+        <div id="nav-container" class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center transition-all duration-500 rounded-3xl border border-transparent">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo Integraterapias" class="w-10 h-10 object-contain rounded-lg">
+                <span class="font-extrabold text-morado-dark tracking-tighter text-2xl uppercase">Integraterapias</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-bold text-morado-dark/70">
+                <a href="#servicios" class="hover:text-morado transition">Servicios</a>
+                <a href="#sobre-mi" class="hover:text-morado transition">Sobre mí</a>
+                <a href="https://wa.me/56996603631" class="bg-morado text-white px-6 py-2.5 rounded-2xl hover:bg-morado-dark transition shadow-lg shadow-morado/20">
+                    Agendar ahora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-44 pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+            <div class="md:w-1/2 z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-morado font-bold text-xs mb-8 shadow-sm border border-lavanda">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-morado opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-morado"></span>
+                    </span>
+                    NUEVO PUNTO DE ATENCIÓN EN SANTIAGO
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-morado-dark leading-[1.1] mb-8">
+                    Sanación real para una <span class="text-morado-light">vida plena.</span>
+                </h1>
+                <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-lg">
+                    Soy <strong>Patricia Núñez Díaz</strong>. Integro la psicología clínica con terapias de medicina complementaria para acompañarte en tu proceso de evolución personal.
+                </p>
+            </div>
+
+            <div class="md:w-1/2 relative flex items-center justify-center">
+                <div class="relative w-full max-w-md mx-auto aspect-square">
+                    <div class="absolute inset-0 bg-white rounded-full shadow-2xl flex items-center justify-center overflow-hidden border-4 border-lavanda/50 hover:shadow-lavanda/30 transition-shadow duration-500">
+                        <img src="psicologa.png" alt="Patricia Núñez Díaz" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <div class="absolute -inset-4 border-2 border-morado/10 rounded-full -z-10 animate-pulse-slow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="servicios" class="py-32 bg-white rounded-[5rem] shadow-inner">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-morado-dark mb-16 tracking-tight">Terapias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="p-10 rounded-[3rem] bg-lavanda-light border border-lavanda hover:bg-morado hover:text-white transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm transition p-3">
+                        <img src="psicoterapia.jpg" alt="Psicoterapia" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Psicoterapia</h3>
+                    <p class="opacity-70 leading-relaxed text-sm">Acompañamiento clínico enfocado en resultados y bienestar emocional profundo.</p>
+                </div>
+
+                <div class="p-10 rounded-[3rem] bg-lavanda-light border border-lavanda hover:bg-morado hover:text-white transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm transition p-3">
+                        <img src="saama.png" alt="Terapia SAAMA" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Terapia SAAMA</h3>
+                    <p class="opacity-70 leading-relaxed text-sm">Sanación integral para liberar bloqueos inconscientes y traumas del pasado.</p>
+                </div>
+
+                <div class="p-10 rounded-[3rem] bg-lavanda-light border border-lavanda hover:bg-morado hover:text-white transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm transition p-3">
+                        <img src="reiki.png" alt="Reiki" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Reiki</h3>
+                    <p class="opacity-70 leading-relaxed text-sm">Equilibrio energético para restaurar la paz mental y la vitalidad corporal.</p>
+                </div>
+
+                <div class="p-10 rounded-[3rem] bg-lavanda-light border border-lavanda hover:bg-morado hover:text-white transition-all duration-500 group">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm transition p-3">
+                        <img src="flores.png" alt="Terapia Floral" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-extrabold mb-4">Terapia Floral</h3>
+                    <p class="opacity-70 leading-relaxed text-sm">Apoyo natural con esencias florales para armonizar estados emocionales.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-morado-dark rounded-[4rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+                <div class="lg:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-8">Conoce a Patricia</h2>
+                    <p class="text-lavanda/70 text-lg leading-relaxed mb-10 text-sm">
+                        Como directora de <strong>Integraterapias</strong>, mi misión es ofrecer un espacio seguro donde la psicología y la medicina integrativa se unan para tu sanación. Atiendo en el Centro "La Tríada", un lugar diseñado para tu tranquilidad.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 text-white">
+                            <div class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <p class="text-xs uppercase font-bold text-lavanda/50">Ubicación</p>
+                                <p class="font-semibold text-sm">Concha y Toro 42, Santiago (Metro República)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 bg-lavanda flex items-center justify-center min-h-[400px]">
+                     <img src="logo.png" alt="Integraterapias" class="w-48 opacity-40 grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center">
+        <div class="max-w-7xl mx-auto px-6 border-t border-lavanda pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 text-sm">
+                <img src="logo.png" alt="Logo" class="w-6 h-6 object-contain">
+                <span class="font-extrabold text-morado-dark uppercase tracking-tighter">Integraterapias</span>
+            </div>
+            <p class="text-xs text-slate-400 font-medium">&copy; 2026 Patricia Núñez Díaz. Santiago, Chile.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/56996603631" 
+       target="_blank" 
+       class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="absolute right-20 bg-white text-morado-dark px-4 py-2 rounded-xl text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-lavanda">
+            ¿Necesitas ayuda? Escríbeme
+        </span>
+    </a>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navContainer = document.getElementById('nav-container');
+            const mainNav = document.getElementById('main-nav');
+            
+            if (window.scrollY > 50) {
+                // Estado al hacer Scroll: Efecto cristal, borde y sombra
+                navContainer.classList.add('glass', 'shadow-xl', 'border-white/50', 'py-3');
+                navContainer.classList.remove('py-4', 'border-transparent');
+                mainNav.classList.add('py-2');
+                mainNav.classList.remove('py-4');
+            } else {
+                // Estado inicial: Transparente y más amplio
+                navContainer.classList.remove('glass', 'shadow-xl', 'border-white/50', 'py-3');
+                navContainer.classList.add('py-4', 'border-transparent');
+                mainNav.classList.remove('py-2');
+                mainNav.classList.add('py-4');
+            }
+        });
+    </script>
+
+</body>
+</html>
